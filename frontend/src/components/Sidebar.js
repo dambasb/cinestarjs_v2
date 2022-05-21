@@ -19,7 +19,7 @@ const Sidebar = () => {
         <div className='sidebar-content'>
           <Nav>
             <Nav.Item>
-              <Nav.Link href='#/home'>
+              <Nav.Link href='/'>
                 <span className='menu-icon'>
                   <i className='fa-solid fa-house'></i>
                   <span className='menu-title'>Home</span>
@@ -41,13 +41,13 @@ const Sidebar = () => {
               </Nav.Link>
               <Nav className={toggleSubmenuClass}>
                 <Nav.Item>
-                  <Nav.Link href='#/home'>Action</Nav.Link>
+                  <Nav.Link href='/action'>Action</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link href='#/home'>Science Fiction</Nav.Link>
+                  <Nav.Link href='/science-fiction'>Science Fiction</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link href='#/home'>Comedy</Nav.Link>
+                  <Nav.Link href='/comedy'>Comedy</Nav.Link>
                 </Nav.Item>
               </Nav>
             </Nav.Item>
