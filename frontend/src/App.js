@@ -13,12 +13,9 @@ const App = () => {
 
   useEffect(() => {
     if (('login' || 'registration') === url.split('/')[3]) {
-      console.log(url.split('/')[3])
       setIsAuthentication(true)
     }
-  }, [])
-
-  console.log(isAuthentication)
+  }, [url])
 
   return (
     <Router>

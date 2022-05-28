@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { Nav } from 'react-bootstrap'
 
 const Sidebar = () => {
-  const [toggleSubmenu, setToggleSubMenu] = useState(false)
+  // TODO return to false
+  const [toggleSubmenu, setToggleSubMenu] = useState(true)
 
   const toggleSubmenuClass = toggleSubmenu
     ? 'sub-menu-list'
@@ -34,7 +35,7 @@ const Sidebar = () => {
                 <span className='menu-icon'>
                   <i className='fa-solid fa-video'></i>
                 </span>
-                <span className='menu-title'>Movie</span>
+                <span className='menu-title'>Movies</span>
                 <span className={rotateIcon}>
                   <i className='fa-solid fa-angle-right'></i>
                 </span>
@@ -44,10 +45,34 @@ const Sidebar = () => {
                   <Nav.Link href='/action'>Action</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link href='/science-fiction'>Science Fiction</Nav.Link>
+                  <Nav.Link href='/adventure'>Adventure</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link href='/comedy'>Comedy</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href='/documentary'>Documentary</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href='/drama'>Drama</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href='/family'>Family</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href='/fantasy'>Fantasy</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href='/horror'>Horror</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href='/mystery'>Mystery</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href='/romance'>Romance</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href='/science-fiction'>Science Fiction</Nav.Link>
                 </Nav.Item>
               </Nav>
             </Nav.Item>

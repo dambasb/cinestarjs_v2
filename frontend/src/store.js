@@ -1,10 +1,34 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
-import { movieReducer } from './reducers/movieReducers'
+import {
+  popularMoviesReducer,
+  actionMoviesReducer,
+  adventureMoviesReducer,
+  comedyMoviesReducer,
+  documentaryMoviesReducer,
+  dramaMoviesReducer,
+  familyMoviesReducer,
+  fantasyMoviesReducer,
+  horrorMoviesReducer,
+  mysteryMoviesReducer,
+  romanceMoviesReducer,
+  scienceFictionMoviesReducer,
+} from './reducers/movieReducers'
 
 const reducer = combineReducers({
-  movie: movieReducer,
+  popularMovies: popularMoviesReducer,
+  actionMovies: actionMoviesReducer,
+  adventureMovies: adventureMoviesReducer,
+  comedyMovies: comedyMoviesReducer,
+  documentaryMovies: documentaryMoviesReducer,
+  dramaMovies: dramaMoviesReducer,
+  familyMovies: familyMoviesReducer,
+  fantasyMovies: fantasyMoviesReducer,
+  horrorMovies: horrorMoviesReducer,
+  mysteryMovies: mysteryMoviesReducer,
+  romanceMovies: romanceMoviesReducer,
+  scienceFictionMovies: scienceFictionMoviesReducer,
 })
 
 const initialState = {}
