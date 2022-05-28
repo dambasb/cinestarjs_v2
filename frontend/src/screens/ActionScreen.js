@@ -7,6 +7,7 @@ const ActionScreen = () => {
 
   const actionMovies = useSelector((state) => state.actionMovies)
 
+  console.log(actionMovies)
   useEffect(() => {
     dispatch(getActionMovies())
   }, [dispatch])

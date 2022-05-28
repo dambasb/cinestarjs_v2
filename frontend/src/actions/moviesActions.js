@@ -50,7 +50,6 @@ export const getActionMovies = () => async (dispatch) => {
       `https://api.themoviedb.org/3/discover/movie?api_key=${REACT_APP_MY_ENV}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=1&primary_release_year=2022&with_genres=${genre}&with_watch_monetization_types=flatrate`
     )
 
-    console.log('Reducer:', res)
     dispatch({ type: GET_ACTION_MOVIES, payload: res.data.results })
   } catch (err) {
     dispatch({

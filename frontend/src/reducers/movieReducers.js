@@ -20,7 +20,7 @@ import {
 
 export const popularMoviesReducer = (
   state = {
-    popularMOVIES: [],
+    popularMovies: [],
   },
 
   action
@@ -28,7 +28,7 @@ export const popularMoviesReducer = (
   const { type, payload } = action
   switch (type) {
     case GET_POPULAR_MOVIES:
-      return { MOVIES: payload }
+      return { popularMovies: payload }
     case MOVIE_ERROR:
       return {
         ...state,
@@ -45,7 +45,7 @@ export const popularMoviesReducer = (
 
 export const actionMoviesReducer = (
   state = {
-    actionMOVIES: [],
+    actionMovies: [],
   },
 
   action
@@ -53,7 +53,7 @@ export const actionMoviesReducer = (
   const { type, payload } = action
   switch (type) {
     case GET_ACTION_MOVIES:
-      return { MOVIES: payload }
+      return { actionMovies: payload }
     case MOVIE_ERROR:
       return {
         ...state,
@@ -70,7 +70,7 @@ export const actionMoviesReducer = (
 
 export const adventureMoviesReducer = (
   state = {
-    adventureMOVIES: [],
+    adventureMovies: [],
   },
 
   action
@@ -78,7 +78,7 @@ export const adventureMoviesReducer = (
   const { type, payload } = action
   switch (type) {
     case GET_ADVENTURE_MOVIES:
-      return { MOVIES: payload }
+      return { adventureMovies: payload }
     case MOVIE_ERROR:
       return {
         ...state,
@@ -95,7 +95,7 @@ export const adventureMoviesReducer = (
 
 export const comedyMoviesReducer = (
   state = {
-    comedyMOVIES: [],
+    comedyMovies: [],
   },
 
   action
@@ -103,7 +103,7 @@ export const comedyMoviesReducer = (
   const { type, payload } = action
   switch (type) {
     case GET_COMEDY_MOVIES:
-      return { MOVIES: payload }
+      return { comedyMovies: payload }
     case MOVIE_ERROR:
       return {
         ...state,
@@ -120,7 +120,7 @@ export const comedyMoviesReducer = (
 
 export const documentaryMoviesReducer = (
   state = {
-    documentaryMOVIES: [],
+    documentaryMovies: [],
   },
 
   action
@@ -128,7 +128,7 @@ export const documentaryMoviesReducer = (
   const { type, payload } = action
   switch (type) {
     case GET_DOCUMENTARY_MOVIES:
-      return { MOVIES: payload }
+      return { documentaryMovies: payload }
     case MOVIE_ERROR:
       return {
         ...state,
@@ -145,7 +145,7 @@ export const documentaryMoviesReducer = (
 
 export const dramaMoviesReducer = (
   state = {
-    dramaMOVIES: [],
+    dramaMovies: [],
   },
 
   action
@@ -153,7 +153,7 @@ export const dramaMoviesReducer = (
   const { type, payload } = action
   switch (type) {
     case GET_DRAMA_MOVIES:
-      return { MOVIES: payload }
+      return { dramaMovies: payload }
     case MOVIE_ERROR:
       return {
         ...state,
@@ -170,7 +170,7 @@ export const dramaMoviesReducer = (
 
 export const familyMoviesReducer = (
   state = {
-    familyMOVIES: [],
+    familyMovies: [],
   },
 
   action
@@ -178,7 +178,7 @@ export const familyMoviesReducer = (
   const { type, payload } = action
   switch (type) {
     case GET_FAMILY_MOVIES:
-      return { MOVIES: payload }
+      return { familyMovies: payload }
     case MOVIE_ERROR:
       return {
         ...state,
@@ -195,7 +195,7 @@ export const familyMoviesReducer = (
 
 export const fantasyMoviesReducer = (
   state = {
-    fantasyMOVIES: [],
+    fantasyMovies: [],
   },
 
   action
@@ -203,7 +203,7 @@ export const fantasyMoviesReducer = (
   const { type, payload } = action
   switch (type) {
     case GET_FANTASY_MOVIES:
-      return { MOVIES: payload }
+      return { fantasyMovies: payload }
     case MOVIE_ERROR:
       return {
         ...state,
@@ -220,7 +220,7 @@ export const fantasyMoviesReducer = (
 
 export const horrorMoviesReducer = (
   state = {
-    horrorMOVIES: [],
+    horrorMovies: [],
   },
 
   action
@@ -228,7 +228,7 @@ export const horrorMoviesReducer = (
   const { type, payload } = action
   switch (type) {
     case GET_HORROR_MOVIES:
-      return { MOVIES: payload }
+      return { horrorMovies: payload }
     case MOVIE_ERROR:
       return {
         ...state,
@@ -245,7 +245,7 @@ export const horrorMoviesReducer = (
 
 export const mysteryMoviesReducer = (
   state = {
-    mysteryMOVIES: [],
+    mysteryMovies: [],
   },
 
   action
@@ -253,7 +253,7 @@ export const mysteryMoviesReducer = (
   const { type, payload } = action
   switch (type) {
     case GET_MYSTERY_MOVIES:
-      return { MOVIES: payload }
+      return { mysteryMovies: payload }
     case MOVIE_ERROR:
       return {
         ...state,
@@ -270,7 +270,7 @@ export const mysteryMoviesReducer = (
 
 export const romanceMoviesReducer = (
   state = {
-    romanceMOVIES: [],
+    romanceMovies: [],
   },
 
   action
@@ -278,7 +278,7 @@ export const romanceMoviesReducer = (
   const { type, payload } = action
   switch (type) {
     case GET_ROMANCE_MOVIES:
-      return { MOVIES: payload }
+      return { romanceMovies: payload }
     case MOVIE_ERROR:
       return {
         ...state,
@@ -295,7 +295,7 @@ export const romanceMoviesReducer = (
 
 export const scienceFictionMoviesReducer = (
   state = {
-    scienceFictionMOVIES: [],
+    scienceFictionMovies: [],
   },
 
   action
@@ -303,7 +303,7 @@ export const scienceFictionMoviesReducer = (
   const { type, payload } = action
   switch (type) {
     case GET_SCIENCE_FICTION_MOVIES:
-      return { MOVIES: payload }
+      return { scienceFictionMovies: payload }
     case MOVIE_ERROR:
       return {
         ...state,
